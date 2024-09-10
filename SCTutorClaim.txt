@@ -1,0 +1,31 @@
+--AscensionTutorial, SummonTutorial, EvolveTutorial, StatRerollTutorial, TraitsTutorial, EnemyIndexTutorial, BattlePassTutorial, PlayTutorial, 
+print("Claim Tutorial")
+
+-- Fungsi untuk mengirim tutorial event
+function sendTutorialEvent(eventType, tutorialCode)
+    local args = {
+        [1] = eventType,
+        [2] = tutorialCode
+    }
+    game:GetService("ReplicatedStorage").Networking.ClientListeners.TutorialEvent:FireServer(unpack(args))
+end
+
+-- Mengirim tutorial dengan event "SaveTutorial"
+sendTutorialEvent("SaveTutorial", "AscensionTutorial")
+sendTutorialEvent("SaveTutorial", "SummonTutorial")
+sendTutorialEvent("SaveTutorial", "EvolveTutorial")
+sendTutorialEvent("SaveTutorial", "StatRerollTutorial")
+sendTutorialEvent("SaveTutorial", "TraitsTutorial")
+sendTutorialEvent("SaveTutorial", "EnemyIndexTutorial")
+sendTutorialEvent("SaveTutorial", "BattlePassTutorial")
+sendTutorialEvent("SaveTutorial", "PlayTutorial")
+
+-- Mengirim tutorial dengan event "ClaimTutorial"
+sendTutorialEvent("ClaimTutorial", "AscensionTutorial")
+sendTutorialEvent("ClaimTutorial", "SummonTutorial")
+sendTutorialEvent("ClaimTutorial", "EvolveTutorial")
+sendTutorialEvent("ClaimTutorial", "StatRerollTutorial")
+sendTutorialEvent("ClaimTutorial", "TraitsTutorial")
+sendTutorialEvent("ClaimTutorial", "EnemyIndexTutorial")
+sendTutorialEvent("ClaimTutorial", "BattlePassTutorial")
+sendTutorialEvent("ClaimTutorial", "PlayTutorial")

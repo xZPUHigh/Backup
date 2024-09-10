@@ -1,0 +1,27 @@
+-- Script 1: Menjalankan Toggle Rare
+print("GACHA ON")
+local function toggleRare()
+    local args = {
+        [1] = "Toggle",
+        [2] = "Rare"
+    }
+    game:GetService("ReplicatedStorage").Networking.Settings.SettingsEvent:FireServer(unpack(args))
+end
+
+-- Script 2: Menjalankan SummonOne
+local function summonOne(times)
+    for i = 1, times do
+        local args = {
+            [1] = "SummonOne",
+            [2] = "Special"
+        }
+        game:GetService("ReplicatedStorage").Networking.Units.SummonEvent:FireServer(unpack(args))
+        wait(1) -- Opsional: menambahkan jeda jika diperlukan
+    end
+end
+
+-- Menjalankan script 1 terlebih dahulu
+toggleRare()
+
+-- Setelah script 1 selesai, menjalankan script 2 sebanyak 100 kali
+summonOne(100)

@@ -1,0 +1,24 @@
+-- Script 1: Memilih Roku
+print("Claim Unit Awal")
+local function selectRoku()
+    local args = {
+        [1] = "Select",
+        [2] = "Roku"
+    }
+    game:GetService("ReplicatedStorage").Networking.Units.UnitSelectionEvent:FireServer(unpack(args))
+end
+
+-- Script 2: Menghapus Units
+local function removeUnits()
+    local args = {
+        [1] = "Remove",
+        [2] = "Units"
+    }
+    game:GetService("ReplicatedStorage").Networking.AlertEvent:FireServer(unpack(args))
+end
+
+-- Menjalankan Script 1 terlebih dahulu
+selectRoku()
+
+-- Setelah Script 1 selesai, menjalankan Script 2
+removeUnits()

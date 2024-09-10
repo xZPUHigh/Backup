@@ -1,0 +1,25 @@
+for i = 1, 3 do
+    -- Menunggu 10 detik sebelum memulai tiap iterasi
+    wait(10)
+    print("Claim Daily - Iterasi ke-"..i)
+
+    -- Script gabungan yang menjalankan semua perintah secara berurutan
+
+    -- Script 1: Claim Daily Reward
+    game:GetService("ReplicatedStorage").Networking.DailyRewardEvent:FireServer(unpack({[1] = "Claim", [2] = 1}))
+
+    -- Script 2: Claim Quest "Summoner I"
+    game:GetService("ReplicatedStorage").Networking.Quests.ClaimQuest:FireServer(unpack({[1] = "Summoner I"}))
+
+    -- Script 3: Claim Quest "Unit Collector I"
+    game:GetService("ReplicatedStorage").Networking.Quests.ClaimQuest:FireServer(unpack({[1] = "Unit Collector I"}))
+
+    -- Script 4: Claim Quest "Unit Collector II"
+    game:GetService("ReplicatedStorage").Networking.Quests.ClaimQuest:FireServer(unpack({[1] = "Unit Collector II"}))
+
+    -- Script 5: Claim Quest "Daily Summoning II"
+    game:GetService("ReplicatedStorage").Networking.Quests.ClaimQuest:FireServer(unpack({[1] = "Daily Summoning II"}))
+
+    -- Script 6: Claim Quest "Weekly Summon II"
+    game:GetService("ReplicatedStorage").Networking.Quests.ClaimQuest:FireServer(unpack({[1] = "Weekly Summon II"}))
+end

@@ -24,4 +24,4 @@ end
 toggleRare()
 
 -- Setelah script 1 selesai, menjalankan script 2 sebanyak 100 kali
-summonOne(100)
+summonOne(500)

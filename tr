@@ -87,7 +87,7 @@ print("Last Updated 04/04/24")
 	WARNING: This just BETA PROJECT! This script has not been verified by QC. Use at your own risk! {ZPU}
 ]]
 repeat wait(0.25) until game:IsLoaded()
-local Loader = loadstring(game:HttpGet("https://raw.githubusercontent.com/xZPUHigh/Project-Spectrum/main/lib2.lua"))()
+local Loader = loadstring(game:HttpGet("https://raw.githubusercontent.com/xZPUHigh/Project-Spectrum/main/lib2"))()
 local Saveed = loadstring(game:HttpGet("https://raw.githubusercontent.com/x0GiGz/Workspace/main/Gui/fluent%20save%20config.lua"))()
 local Setting = loadstring(game:HttpGet("https://raw.githubusercontent.com/x0GiGz/Workspace/main/Gui/fluent%20interfaces.lua"))()
 local SetFile = loadstring(game:HttpGet("https://raw.githubusercontent.com/x0GiGz/Workspace/main/Function/filehelper.lua"))()

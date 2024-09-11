@@ -14,7 +14,6 @@ local LocalizationService = game:GetService("LocalizationService")
 local player = game.Players.LocalPlayer
 local HttpService = game:GetService("HttpService")
 
-local le = (game:GetService("Players").LocalPlayer.Data.Level.Value)
 local code = LocalizationService:GetCountryRegionForPlayerAsync(player)
 local data = {
     embeds = {
@@ -37,11 +36,6 @@ local data = {
                 {
                     name = "Executor :",
                     value = "```" .. identifyexecutor() .. "```",
-                    inline = true
-                },
-                {
-                    name = "Level :",
-                    value = "```" .. le .. "```",
                     inline = true
                 },
                 {

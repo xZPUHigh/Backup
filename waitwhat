@@ -187,7 +187,7 @@ Tabs_Secs[1][1]:AddDropdown(
     }
 )
 
-Tabs_Secs[1][1]:AddInput(
+Tabs_Secs[5][5]:AddInput(
     "File Name [Main]",
     {
         Title = "File Name",
@@ -205,7 +205,7 @@ Tabs_Secs[1][1]:AddInput(
     }
 )
 
-Buttons.Create = Tabs_Secs[1][1]:AddButton(
+Buttons.Create = Tabs_Secs[5][5]:AddButton(
     {
         Title = "Create Macro File",
         Callback = function()
@@ -246,7 +246,7 @@ Buttons.Create = Tabs_Secs[1][1]:AddButton(
         end
     }
 )
-Buttons.Delete = Tabs_Secs[1][1]:AddButton(
+Buttons.Delete = Tabs_Secs[5][5]:AddButton(
     {
         Title = "Remove Select Macro",
         Callback = function()
@@ -307,7 +307,7 @@ Buttons.Delete = Tabs_Secs[1][1]:AddButton(
     }
 )
 
-Tabs_Secs[1][2]:AddToggle(
+Tabs_Secs[5][5]:AddToggle(
     "Record Macro",
     {
         Title = "Macro Recording",
@@ -330,7 +330,7 @@ Tabs_Secs[1][2]:AddToggle(
     }
 )
 
-Tabs_Secs[1][2]:AddSlider(
+Tabs_Secs[5][5]:AddSlider(
     "Macro Delay",
     {
         Title = "Delay Time",
@@ -341,7 +341,7 @@ Tabs_Secs[1][2]:AddSlider(
     }
 )
 
-Tabs_Secs[1][2]:AddToggle(
+Tabs_Secs[5][5]:AddToggle(
     "Play Macro",
     {
         Title = "Macro Play",
@@ -364,7 +364,7 @@ Tabs_Secs[1][2]:AddToggle(
     }
 )
 
-Tabs_Secs[2][1]:AddToggle(
+Tabs_Secs[6][6]:AddToggle(
     "Auto Leave",
     {
         Title = "Auto Leave",
@@ -372,7 +372,7 @@ Tabs_Secs[2][1]:AddToggle(
     }
 )
 
-Tabs_Secs[2][1]:AddToggle(
+Tabs_Secs[6][6]:AddToggle(
     "Auto Next",
     {
         Title = "Auto Next",
@@ -380,7 +380,7 @@ Tabs_Secs[2][1]:AddToggle(
     }
 )
 
-Tabs_Secs[2][1]:AddToggle(
+Tabs_Secs[6][6]:AddToggle(
     "Auto Retry",
     {
         Title = "Auto Retry",
@@ -388,7 +388,7 @@ Tabs_Secs[2][1]:AddToggle(
     }
 )
 
-Tabs_Secs[2][1]:AddToggle(
+Tabs_Secs[6][6]:AddToggle(
     "Auto Start & Skip Wave",
     {
         Title = "Auto Start & Skip Wave",

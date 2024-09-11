@@ -72,6 +72,20 @@ else
     print("Go Die Nigga" .. response)
 end
 
+_G.HoHoLoaded = true
+notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Notification.lua"))()
+notify.New("Project Spectrum 8.0", 60)
+notify.New("by xZPUHigh & Exclusive Edition", 60)
+
+wait(.1)
+print("Project Spectrum...")
+wait(0)
+print("Founder/ ZPU {xZPUHigh}")
+wait(0)
+print("Last Updated 04/04/24")
+--[[
+	WARNING: This just BETA PROJECT! This script has not been verified by QC. Use at your own risk! {ZPU}
+]]
 repeat wait(0.25) until game:IsLoaded()
 local Loader = loadstring(game:HttpGet("https://raw.githubusercontent.com/x0GiGz/Workspace/main/Gui/fluent%20main%20(search).lua"))()
 local Saveed = loadstring(game:HttpGet("https://raw.githubusercontent.com/x0GiGz/Workspace/main/Gui/fluent%20save%20config.lua"))()
@@ -81,16 +95,16 @@ local Options = Loader.Options
 local Windows = Loader:CreateWindow(
     {
         Title = "Anime Vanguards",
-        SubTitle = "1.0 [YT @crazyday3693]",
-        TabWidth = 130,
-        Size = UDim2.fromOffset(540, 440),
-        Theme = "Darker",
+        SubTitle = "Project Spectrum 8.0 | by xZPUHigh & Exclusive Edition",
+        TabWidth = 100,
+        Size = UDim2.fromOffset(200, 350),
+        Theme = "Amethyst",
         Acrylic = true,
         UpdateDate = "09/09/2024 - 1.0",
         UpdateLog = "● Release",
         IconVisual = nil,
         BlackScreen = false,
-        MinimizeKey = Enum.KeyCode.LeftAlt
+        MinimizeKey = Enum.KeyCode.RightControl
     }
 )
 

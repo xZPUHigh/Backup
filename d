@@ -79,28 +79,29 @@ else
 end
 
 repeat wait(0.25) until game:IsLoaded()
-local Loader = loadstring(game:HttpGet("https://raw.githubusercontent.com/xZPUHigh/Project-Spectrum/main/library.lua"))()
-local Saveed = loadstring(game:HttpGet("https://raw.githubusercontent.com/xZPUHigh/Project-Spectrum/main/save.lua"))()
-local Setting = loadstring(game:HttpGet("https://raw.githubusercontent.com/xZPUHigh/Project-Spectrum/main/interface.lua"))()
-local SetFile = loadstring(game:HttpGet("https://raw.githubusercontent.com/xZPUHigh/Project-Spectrum/main/filehelper.lua"))()
+local Loader = loadstring(game:HttpGet("https://raw.githubusercontent.com/x0GiGz/Workspace/main/Gui/fluent%20main%20(search).lua"))()
+local Saveed = loadstring(game:HttpGet("https://raw.githubusercontent.com/x0GiGz/Workspace/main/Gui/fluent%20save%20config.lua"))()
+local Setting = loadstring(game:HttpGet("https://raw.githubusercontent.com/x0GiGz/Workspace/main/Gui/fluent%20interfaces.lua"))()
+local SetFile = loadstring(game:HttpGet("https://raw.githubusercontent.com/x0GiGz/Workspace/main/Function/filehelper.lua"))()
 local Options = Loader.Options
-local Window =
-    Fluent:CreateWindow(
+local Windows = Loader:CreateWindow(
     {
-        Title = "Project Spectrum 8.0",
-        SubTitle = "by xZPUHigh & Exclusive Edition // discord.gg/zpu",
-        TabWidth = 100,
-        Size = UDim2.fromOffset(200, 350),
-        Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
-        Transparency = false,
-        Theme = "Amethyst",
-        MinimizeKey = Enum.KeyCode.RightControl -- Used when theres no MinimizeKeybind
+        Title = "Anime Vanguards",
+        SubTitle = "1.0 [YT @crazyday3693]",
+        TabWidth = 130,
+        Size = UDim2.fromOffset(540, 440),
+        Theme = "Darker",
+        Acrylic = true,
+        UpdateDate = "09/09/2024 - 1.0",
+        UpdateLog = "● Release",
+        IconVisual = nil,
+        BlackScreen = false,
+        MinimizeKey = Enum.KeyCode.LeftAlt
     }
 )
 
 local Tabs_Main =
 {
-    
     [1] = Windows:AddTab({Title = "Macro", Name = nil, Icon = "video"}),
     [2] = Windows:AddTab({Title = "Game", Name = nil, Icon = "layers"}),
     [3] = Windows:AddTab({Title = "Settings", Name = nil, Icon = "settings"})

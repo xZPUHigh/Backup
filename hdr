@@ -97,14 +97,14 @@ local Windows = Loader:CreateWindow(
         Title = "Anime Vanguards",
         SubTitle = "Project Spectrum 8.0 | by xZPUHigh & Exclusive Edition",
         TabWidth = 100,
-        Size = UDim2.fromOffset(200, 350),
+        Size = UDim2.fromOffset(300, 300),
         Theme = "Amethyst",
         Acrylic = true,
         UpdateDate = "09/09/2024 - 1.0",
         UpdateLog = "● Release",
         IconVisual = nil,
         BlackScreen = false,
-        MinimizeKey = Enum.KeyCode.RightControl
+        MinimizeKey = Enum.KeyCode.LeftAlt
     }
 )
 

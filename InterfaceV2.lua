@@ -24,7 +24,7 @@ end;
 
 local SettingToggle = {}
 
-local Name = "BTConfig.JSON"
+local Name = "Spectrum.JSON"
 
 pcall(function()
     if not pcall(function() readfile(Name) end) then
@@ -83,7 +83,7 @@ function Library:CreateWindow(hubname)
     ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
 
     game:GetService("UserInputService").InputBegan:connect(function(input) 
-        if input.KeyCode == Enum.KeyCode.LeftControl then
+        if input.KeyCode == Enum.KeyCode.RightControl then
             Library:ToggleUI()
         end
     end)
@@ -184,7 +184,7 @@ function Library:CreateWindow(hubname)
     end)
 
     Discord.MouseButton1Click:Connect(function()
-        (setclipboard or toclipboard)("https://discord.gg/25ms")
+        (setclipboard or toclipboard)("https://discord.gg/hackerclub")
         wait(.1)
         game:GetService("StarterGui"):SetCore("SendNotification",{
             Title = "Discord",
@@ -219,7 +219,7 @@ function Library:CreateWindow(hubname)
         local Minute = math.floor(GameTime/(60^1))%60
         local Second = math.floor(GameTime/(60^0))%60
         local FormatTime = string.format("%02d.%02d.%02d", Hour, Minute, Second)
-        ServerTimeFunc:Refresh("Game Time : " .. FormatTime)
+        ServerTimeFunc:Refresh("Server Time : " .. FormatTime)
     end
 
     spawn(function()
@@ -237,7 +237,7 @@ function Library:CreateWindow(hubname)
     Server_ID.Position = UDim2.new(0, 230, 0, 320)
     Server_ID.Size = UDim2.new(0, 365, 0, 25)
     Server_ID.Font = Enum.Font.SourceSansSemibold
-    Server_ID.Text = "User : " .. NameID .. "     [CTRL = Hide Gui]";
+    Server_ID.Text = "Ayo " .. NameID .. "     [RIGHT CONTROL]";
     Server_ID.TextColor3 = Color3.fromRGB(255, 255, 255)
     Server_ID.TextSize = 14.000
     Server_ID.TextXAlignment = Enum.TextXAlignment.Right
@@ -252,8 +252,8 @@ function Library:CreateWindow(hubname)
 
     Tile_Gradient.Color = ColorSequence.new({
         ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 0, 0)),
-        ColorSequenceKeypoint.new(0.3, Color3.fromRGB(255, 0, 0)),
-        ColorSequenceKeypoint.new(0.7, Color3.fromRGB(255, 0, 0)),
+        ColorSequenceKeypoint.new(0.3, Color3.fromRGB(102, 0, 255)),
+        ColorSequenceKeypoint.new(0.7, Color3.fromRGB(102, 0, 255)),
         ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 0, 0)),
     })
     Tile_Gradient.Name = "Tile_Gradient"
@@ -277,8 +277,8 @@ function Library:CreateWindow(hubname)
     toggle_Image.BorderColor3 = Color3.fromRGB(0, 0, 0)
     toggle_Image.BorderSizePixel = 0
     toggle_Image.Size = UDim2.new(0, 40, 0, 40)
-    toggle_Image.Image = "http://www.roblox.com/asset/?id=12021503727"
-    toggle_Image.ImageColor3 = Color3.fromRGB(255, 0, 0)
+    toggle_Image.Image = "http://www.roblox.com/asset/?id=15568727833"
+    toggle_Image.ImageColor3 = Color3.fromRGB(102, 0, 255)
 
     local minimizetog = false
     MInimize_Button.MouseButton1Click:Connect(function()
@@ -381,8 +381,8 @@ function Library:CreateWindow(hubname)
 
     TabList_Gradient.Color = ColorSequence.new({
         ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 0, 0)),
-        ColorSequenceKeypoint.new(0.3, Color3.fromRGB(255, 0, 0)),
-        ColorSequenceKeypoint.new(0.7, Color3.fromRGB(255, 0, 0)),
+        ColorSequenceKeypoint.new(0.3, Color3.fromRGB(102, 0, 255)),
+        ColorSequenceKeypoint.new(0.7, Color3.fromRGB(102, 0, 255)),
         ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 0, 0)),
     })
     TabList_Gradient.Name = "TabList_Gradient"
@@ -428,8 +428,8 @@ function Library:CreateWindow(hubname)
     local ContainerGradients = Instance.new("UIGradient")
     ContainerGradients.Color = ColorSequence.new({
         ColorSequenceKeypoint.new(0, Color3.fromRGB(100, 0, 0)),
-        ColorSequenceKeypoint.new(0.3, Color3.fromRGB(255, 0, 0)),
-        ColorSequenceKeypoint.new(0.7, Color3.fromRGB(255, 0, 0)),
+        ColorSequenceKeypoint.new(0.3, Color3.fromRGB(102, 0, 255)),
+        ColorSequenceKeypoint.new(0.7, Color3.fromRGB(102, 0, 255)),
         ColorSequenceKeypoint.new(1, Color3.fromRGB(100, 0, 0)),
     })
     ContainerGradients.Name = "ContainerGradients"
@@ -450,7 +450,7 @@ function Library:CreateWindow(hubname)
         -- Properties:
         Tab_Items.Name = "Tab_Items"
         Tab_Items.Parent = Tab_Scroll
-        Tab_Items.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        Tab_Items.BackgroundColor3 = Color3.fromRGB(102, 0, 255)
         Tab_Items.BackgroundTransparency = 1.000
         Tab_Items.BorderColor3 = Color3.fromRGB(0, 0, 0)
         Tab_Items.BorderSizePixel = 0
@@ -536,7 +536,7 @@ function Library:CreateWindow(hubname)
             SectionScroll.BorderColor3 = Color3.fromRGB(0, 0, 0)
             SectionScroll.BorderSizePixel = 0
             SectionScroll.Size = UDim2.new(0, 285, 0, 245)
-            SectionScroll.ScrollBarImageColor3 = Color3.fromRGB(255, 0, 0)
+            SectionScroll.ScrollBarImageColor3 = Color3.fromRGB(102, 0, 255)
             SectionScroll.ScrollBarThickness = 4
 
             UIListLayout_Section.Parent = SectionScroll
@@ -606,7 +606,7 @@ function Library:CreateWindow(hubname)
                 TextLabel.Size = UDim2.new(1, 0, 0, 20)
                 TextLabel.Font = Enum.Font.SourceSansSemibold
                 TextLabel.Text = title_menu
-                TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+                TextLabel.TextColor3 = Color3.fromRGB(102, 0, 255)
                 TextLabel.TextSize = 14.000
 
                 List.Name = "List"
@@ -618,8 +618,8 @@ function Library:CreateWindow(hubname)
 
                 UIGradient.Color = ColorSequence.new({
                     ColorSequenceKeypoint.new(0, Color3.fromRGB(30, 30, 30)),
-                    ColorSequenceKeypoint.new(0.3, Color3.fromRGB(255, 0, 0)),
-                    ColorSequenceKeypoint.new(0.7, Color3.fromRGB(255, 0, 0)),
+                    ColorSequenceKeypoint.new(0.3, Color3.fromRGB(102, 0, 255)),
+                    ColorSequenceKeypoint.new(0.7, Color3.fromRGB(102, 0, 255)),
                     ColorSequenceKeypoint.new(1, Color3.fromRGB(30, 30, 30)),
                 })
                 UIGradient.Parent = List
@@ -1085,8 +1085,8 @@ function Library:CreateWindow(hubname)
                             TextButton.Text = "Invald...";
                             Key = inputwait.KeyCode.Name;
                             callback();
-                            utility:Tween(TextButton, {TextColor3 = Color3.fromRGB(255, 0, 0)}, .1);
-                            utility:Tween(TextLabel, {TextColor3 = Color3.fromRGB(255, 0, 0)}, .1);
+                            utility:Tween(TextButton, {TextColor3 = Color3.fromRGB(102, 0, 255)}, .1);
+                            utility:Tween(TextLabel, {TextColor3 = Color3.fromRGB(102, 0, 255)}, .1);
                             wait(.1);
                             utility:Tween(TextButton, {TextColor3 = Color3.fromRGB(255, 255, 255)}, 1);
                             utility:Tween(TextLabel, {TextColor3 = Color3.fromRGB(255, 255, 255)}, 1);
